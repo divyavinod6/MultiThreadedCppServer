@@ -1,2 +1,3 @@
 # MultiThreadedCppServer
-A web server build from scratch in C++ with features like Multi Threading,GZIP Compression and addition of reverse proxy Ngnix
+
+Multithreaded web server build from scratch in C which also acts as a proxy web server alone with GZIP Compression and LRU Cache.
