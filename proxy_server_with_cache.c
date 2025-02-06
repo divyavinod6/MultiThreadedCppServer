@@ -2,8 +2,11 @@
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
+// #include <pthread.h>
 
 
+
+#define MAX_CLIENTS 10
 typedef struct cache_element cache_element;
 
 
@@ -18,3 +21,7 @@ struct cache_element{
 cache_element* find(char* url );
 int add_cache_element(char* data, int size, char* url);
 void remove_cache_element();
+
+int port_number = 8080;
+int proxy_socketID;
+// pthread_t tid[MAX_CLIENTS];
