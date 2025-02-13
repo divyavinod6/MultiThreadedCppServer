@@ -3,7 +3,7 @@
     {
       "name": "Win32",
       "includePath": [
-        "${default}", // workplace folder
+        "${default}", // workplace folder for now
         "C:/MinGW/include",
         "C:/MinGW/lib/gcc/mingw32/6.3.0/include",
         "C:/MinGW/lib/gcc/mingw32/6.3.0/include-fixed",
