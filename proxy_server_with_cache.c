@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
-#include <pthread.h>
+//#include <pthread.h>
 
 
 
@@ -25,3 +25,4 @@ void remove_cache_element();
 int port_number = 8080;
 int proxy_socketID;
 // pthread_t tid[MAX_CLIENTS];
+// import c_cpp_prop
