@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <time.h>
+#include <sys/types.h> 
 #include <pthread.h>
 
 
@@ -13,7 +14,7 @@ struct cache_element{
     char* data;
     int len;
     char* url;
-    //time_t lru_time_track;
+    time_t lru_time_track;
     cache_element* next;
 };
 
@@ -23,5 +24,5 @@ void remove_cache_element();
 
 int port_number = 8080;
 int proxy_socketID;
-// pthread_t tid[MAX_CLIENTS];
+pthread_t tid[MAX_CLIENTS];
 // import c_cpp_prop
