@@ -25,4 +25,6 @@ void remove_cache_element();
 int port_number = 8080;
 int proxy_socketID;
 pthread_t tid[MAX_CLIENTS];
+//sem_t semaphore;
+pthread_mutex_t lock;
 // import c_cpp_prop
