@@ -5,7 +5,6 @@
 #include <sys/types.h> 
 #include <pthread.h>
 
-//configured phread.h
 #define MAX_CLIENTS 10
 typedef struct cache_element cache_element;
 
