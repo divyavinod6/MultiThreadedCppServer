@@ -1,9 +1,20 @@
 #include "proxy_parse.h"
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <netdb.h>
+#include <arpa/inet.h>
+#include <unistd.h>
+#include <fcntl.h>
 #include <time.h>
-#include <sys/types.h> 
+#include <sys/wait.h>
+#include <errno.h>
 #include <pthread.h>
+#include <semaphore.h>
+
 
 #define MAX_CLIENTS 10
 typedef struct cache_element cache_element;
@@ -24,5 +35,5 @@ void remove_cache_element();
 int port_number = 8080;
 int proxy_socketID;
 pthread_t tid[MAX_CLIENTS];
-//sem_t semaphore;
+sem_t semaphore;
 pthread_mutex_t lock;
