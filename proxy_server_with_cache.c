@@ -37,7 +37,6 @@ int proxy_socketID;
 pthread_t tid[MAX_CLIENTS]; // every client request, we create a thread and in it a socket to return response 
 sem_t semaphore;
 pthread_mutex_t lock;
-
 cache_element* head;
 int cache_size;
 
@@ -68,4 +67,5 @@ int main(int argc,char* argv[]){
     }
     // all variables hold garbage value so we have to clean it be setting it back to 0
     bzero((char*)&server_addr, sizeof(server_addr));
+    // to continue building from here
 }
