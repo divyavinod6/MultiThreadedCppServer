@@ -1,5 +1,6 @@
 {
   "files.associations": {
     "proxy_parse.h": "c"
-  }
+  },
+  "C_Cpp.default.compilerPath": "/usr/bin/gcc"
 }
